@@ -13,14 +13,14 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="John Doe">
+  <meta name="author" content="capdream">
   <meta name="keywords" content="">
   
     <meta name="description" content="购买服务器网上很多的教程上都是写的使用的轻量化的服务器，阿里云有直接购买部署环境的，比如可以直接下载 宝塔，docker 这些镜像，正常的云服务器 ECS 是只选配一个系统。当然如果有兴趣，需要大一些的空间的话也可以直接使用 OSS 而且云上的更安全，更节省空间，同时也有很多的其他特色服务器我是购买的活动有优惠，如果想体验的话新人学生都有优惠，可以免费体验很多项目，像这个服务器是可以体验三个月，还">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu,windows+hexo+github+语雀同步">
 <meta property="og:url" content="http://example.com/2023/11/22/yuque/kpvecs1rc6e2fizt/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Welcome to my world">
 <meta property="og:description" content="购买服务器网上很多的教程上都是写的使用的轻量化的服务器，阿里云有直接购买部署环境的，比如可以直接下载 宝塔，docker 这些镜像，正常的云服务器 ECS 是只选配一个系统。当然如果有兴趣，需要大一些的空间的话也可以直接使用 OSS 而且云上的更安全，更节省空间，同时也有很多的其他特色服务器我是购买的活动有优惠，如果想体验的话新人学生都有优惠，可以免费体验很多项目，像这个服务器是可以体验三个月，还">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/27928215/1699804365678-834f5fd7-1dec-4c3d-a6bf-f9e14315e57b.png#averageHue=%23fdfdfc&clientId=u947399bb-5053-4&from=paste&height=474&id=jgzm4&originHeight=1066&originWidth=2375&originalType=binary%E2%88%B6=2.25&rotation=0&showTitle=false&size=187072&status=done&style=none&taskId=u82ccb8fc-7585-43b3-b805-887b1b935f0&title=&width=1055.5555555555557">
@@ -90,13 +90,15 @@
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/27928215/1700596518050-c0dbf82e-19c7-438c-bc34-229dfc630982.png#averageHue=%23e9a96f&clientId=u0e4b8c17-285b-4&from=paste&height=506&id=u50a52a9c&originHeight=759&originWidth=2285&originalType=binary%E2%88%B6=1.5&rotation=0&showTitle=false&size=164252&status=done&style=none&taskId=uf037badd-9e1b-47a3-a538-d904bab2296&title=&width=1523.3333333333333">
 <meta property="article:published_time" content="2023-11-21T21:10:35.000Z">
 <meta property="article:modified_time" content="2023-11-21T21:12:38.771Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="capdream">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2023/png/27928215/1699804365678-834f5fd7-1dec-4c3d-a6bf-f9e14315e57b.png#averageHue=%23fdfdfc&clientId=u947399bb-5053-4&from=paste&height=474&id=jgzm4&originHeight=1066&originWidth=2375&originalType=binary%E2%88%B6=2.25&rotation=0&showTitle=false&size=187072&status=done&style=none&taskId=u82ccb8fc-7585-43b3-b805-887b1b935f0&title=&width=1055.5555555555557">
   
   
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
-  <title>Ubuntu,windows+hexo+github+语雀同步 - Hexo</title>
+  
+  <title>Ubuntu,windows+hexo+github+语雀同步 - Welcome to my world</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -147,7 +149,7 @@
 
 
   
-<meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+<meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="Welcome to my world" type="application/atom+xml">
 </head>
 
 
@@ -161,7 +163,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>Fluid</strong>
+      <strong>capdream</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -369,7 +371,7 @@
 <h2 id="使用-ssh-keygen-生成私钥和公钥"><a href="#使用-ssh-keygen-生成私钥和公钥" class="headerlink" title="使用 ssh-keygen 生成私钥和公钥"></a>使用 ssh-keygen 生成私钥和公钥</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 使用ssh-keygen生成私钥和公钥</span><br>ssh-keygen -t rsa -C <span class="hljs-string">&quot;邮箱&quot;</span><br><br><span class="hljs-comment"># 这里可以全部回车，第一个回车是路径，第二三的回车是密码，建议无密码</span><br><span class="hljs-comment"># Your identification has been saved in /root/.ssh/id_rsa</span><br><span class="hljs-comment"># Your public key has been saved in /root/.ssh/id_rsa.pub</span><br><span class="hljs-comment"># 这两行是生成 私钥 公钥 的保存路径</span><br></code></pre></td></tr></table></figure>
 
 <p><img src="https://cdn.nlark.com/yuque/0/2023/png/27928215/1700583023319-bfe3c065-13b1-4cf0-948b-057cbf6ed4d6.png#averageHue=%232c2a28&clientId=ubebae56a-c5bb-4&from=paste&height=198&id=u4ced0e3a&originHeight=297&originWidth=699&originalType=binary%E2%88%B6=1.5&rotation=0&showTitle=false&size=45808&status=done&style=none&taskId=ud8eba05f-b41c-4261-aac3-3b3d98bbbd7&title=&width=466" srcset="/img/loading.gif" lazyload alt="image.png"></p>
-<h2 id="Github-添加公钥"><a href="#Github-添加公钥" class="headerlink" title="Github 添加公钥"></a>Github 添加公钥</h2><p>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDvGSDtVYq+Grftx8HbzydSWItkiXTgq5NOc2tiBN2+UlbUNaUJBlqfgz5DDhUAMgm76E9KAhdDnW9y1Nv7sxUCWLl4SRwOUc6yFN56qLWqvaFsx4nXD88qTbF3sKJ3Aik457trxB8oc8mFTrbP8iD2NfIcHQGclMkLQ8qBRsROZ7ojDDKPCg3l4xLFav93dGi5yL&#x2F;Nx3PnrQborlcH1XSihH333FU630hJywDZc&#x2F;664ghPbSFMrjmSPKY6GsQia7HBS5MzgRwCxIu8mOP8q9u47eSOpuz+0NHs0e9exOTezu1iTMhb2LX9rVvmzI+7AALFmJrjdq1&#x2F;DH&#x2F;nLFwL0kE3vJXCJedu+JOquF6P4wsh0nXLTCCllxeNp14GAkPIcH+KWjJutpGT&#x2F;3v9rBEAZAnpQqvxQ7fbU3o5Q+pJe3fU3aBz+Y7M64po&#x2F;moYZgVNLvKp+CLO+1OHqZHjBDXXvg+v7rbj3beGLQHDzaO5ZbCOs2gawYRoPxcj0vmGg&#x2F;mzHvE&#x3D; <a href="mailto:&#x33;&#49;&#51;&#x35;&#52;&#x37;&#52;&#x38;&#x33;&#49;&#64;&#113;&#113;&#46;&#x63;&#111;&#x6d;">&#x33;&#49;&#51;&#x35;&#52;&#x37;&#52;&#x38;&#x33;&#49;&#64;&#113;&#113;&#46;&#x63;&#111;&#x6d;</a></p>
+<h2 id="Github-添加公钥"><a href="#Github-添加公钥" class="headerlink" title="Github 添加公钥"></a>Github 添加公钥</h2><p>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDvGSDtVYq+Grftx8HbzydSWItkiXTgq5NOc2tiBN2+UlbUNaUJBlqfgz5DDhUAMgm76E9KAhdDnW9y1Nv7sxUCWLl4SRwOUc6yFN56qLWqvaFsx4nXD88qTbF3sKJ3Aik457trxB8oc8mFTrbP8iD2NfIcHQGclMkLQ8qBRsROZ7ojDDKPCg3l4xLFav93dGi5yL&#x2F;Nx3PnrQborlcH1XSihH333FU630hJywDZc&#x2F;664ghPbSFMrjmSPKY6GsQia7HBS5MzgRwCxIu8mOP8q9u47eSOpuz+0NHs0e9exOTezu1iTMhb2LX9rVvmzI+7AALFmJrjdq1&#x2F;DH&#x2F;nLFwL0kE3vJXCJedu+JOquF6P4wsh0nXLTCCllxeNp14GAkPIcH+KWjJutpGT&#x2F;3v9rBEAZAnpQqvxQ7fbU3o5Q+pJe3fU3aBz+Y7M64po&#x2F;moYZgVNLvKp+CLO+1OHqZHjBDXXvg+v7rbj3beGLQHDzaO5ZbCOs2gawYRoPxcj0vmGg&#x2F;mzHvE&#x3D; <a href="mailto:&#x33;&#49;&#51;&#53;&#52;&#x37;&#x34;&#56;&#x33;&#x31;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#x6d;">&#x33;&#49;&#51;&#53;&#52;&#x37;&#x34;&#56;&#x33;&#x31;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#x6d;</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 根据公钥保存路径查看公钥并复制</span><br>root@capdream:~<span class="hljs-comment"># cd ~/.ssh</span><br>root@capdream:~/.ssh<span class="hljs-comment"># ls</span><br>authorized_keys  id_rsa  id_rsa.pub<br>root@capdream:~/.ssh<span class="hljs-comment"># cat id_rsa.pub</span><br></code></pre></td></tr></table></figure>
 
 <p><img src="https://cdn.nlark.com/yuque/0/2023/png/27928215/1700583363210-21fe0d28-acf4-40f3-ba90-aae1919a3b02.png#averageHue=%23312f2c&clientId=ubebae56a-c5bb-4&from=paste&height=64&id=ue66366ae&originHeight=96&originWidth=449&originalType=binary%E2%88%B6=1.5&rotation=0&showTitle=false&size=11662&status=done&style=none&taskId=u6a4b1571-45c5-419a-b1b8-b18510eaaa3&title=&width=299.3333333333333" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.nlark.com/yuque/0/2023/png/27928215/1700497263541-b4631b4a-dd1e-47d7-a71d-2f643fc147ad.png#averageHue=%230e1319&clientId=u4e1bbd40-bdb8-4&from=paste&height=487&id=u8e3807ab&originHeight=804&originWidth=1985&originalType=binary%E2%88%B6=1.6500000953674316&rotation=0&showTitle=false&size=146459&status=done&style=none&taskId=u94c492c4-616e-450c-b180-f15144c0e38&title=&width=1203.0302334970281" srcset="/img/loading.gif" lazyload alt="image.png"><br>创建然后将复制的公钥保存即可，名字随便取</p>
@@ -435,7 +437,7 @@
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>John Doe</div>
+          <div>capdream</div>
         </div>
       
       
@@ -489,6 +491,15 @@
             </div>
 
             
+  
+  
+    <article id="comments" lazyload>
+      
+
+    </article>
+  
+
+
           </article>
         </div>
       </div>
@@ -584,6 +595,30 @@
        <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
     </div>
   
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
   
   
   
@@ -730,6 +765,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
