@@ -11,8 +11,8 @@
   <link rel="icon" href="/img/fluid.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="referrer" content="no-referrer" />
   
+  <meta name="referrer" content="no-referrer" />
   <meta name="theme-color" content="#2f4154">
   <meta name="author" content="capdream">
   <meta name="keywords" content="">
@@ -137,7 +137,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -182,7 +182,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -194,7 +194,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/">
+              <a class="nav-link" href="/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -206,7 +206,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/">
+              <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -218,7 +218,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/">
+              <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -230,7 +230,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/">
+              <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -325,6 +325,7 @@
   <main>
     
       
+
 <div class="container-fluid nopadding-x">
   <div class="row nomargin-x">
     <div class="side-col d-none d-lg-block col-lg-2">
@@ -371,7 +372,7 @@
 <h2 id="使用-ssh-keygen-生成私钥和公钥"><a href="#使用-ssh-keygen-生成私钥和公钥" class="headerlink" title="使用 ssh-keygen 生成私钥和公钥"></a>使用 ssh-keygen 生成私钥和公钥</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 使用ssh-keygen生成私钥和公钥</span><br>ssh-keygen -t rsa -C <span class="hljs-string">&quot;邮箱&quot;</span><br><br><span class="hljs-comment"># 这里可以全部回车，第一个回车是路径，第二三的回车是密码，建议无密码</span><br><span class="hljs-comment"># Your identification has been saved in /root/.ssh/id_rsa</span><br><span class="hljs-comment"># Your public key has been saved in /root/.ssh/id_rsa.pub</span><br><span class="hljs-comment"># 这两行是生成 私钥 公钥 的保存路径</span><br></code></pre></td></tr></table></figure>
 
 <p><img src="https://cdn.nlark.com/yuque/0/2023/png/27928215/1700583023319-bfe3c065-13b1-4cf0-948b-057cbf6ed4d6.png#averageHue=%232c2a28&clientId=ubebae56a-c5bb-4&from=paste&height=198&id=u4ced0e3a&originHeight=297&originWidth=699&originalType=binary%E2%88%B6=1.5&rotation=0&showTitle=false&size=45808&status=done&style=none&taskId=ud8eba05f-b41c-4261-aac3-3b3d98bbbd7&title=&width=466" srcset="/img/loading.gif" lazyload alt="image.png"></p>
-<h2 id="Github-添加公钥"><a href="#Github-添加公钥" class="headerlink" title="Github 添加公钥"></a>Github 添加公钥</h2><p>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDvGSDtVYq+Grftx8HbzydSWItkiXTgq5NOc2tiBN2+UlbUNaUJBlqfgz5DDhUAMgm76E9KAhdDnW9y1Nv7sxUCWLl4SRwOUc6yFN56qLWqvaFsx4nXD88qTbF3sKJ3Aik457trxB8oc8mFTrbP8iD2NfIcHQGclMkLQ8qBRsROZ7ojDDKPCg3l4xLFav93dGi5yL&#x2F;Nx3PnrQborlcH1XSihH333FU630hJywDZc&#x2F;664ghPbSFMrjmSPKY6GsQia7HBS5MzgRwCxIu8mOP8q9u47eSOpuz+0NHs0e9exOTezu1iTMhb2LX9rVvmzI+7AALFmJrjdq1&#x2F;DH&#x2F;nLFwL0kE3vJXCJedu+JOquF6P4wsh0nXLTCCllxeNp14GAkPIcH+KWjJutpGT&#x2F;3v9rBEAZAnpQqvxQ7fbU3o5Q+pJe3fU3aBz+Y7M64po&#x2F;moYZgVNLvKp+CLO+1OHqZHjBDXXvg+v7rbj3beGLQHDzaO5ZbCOs2gawYRoPxcj0vmGg&#x2F;mzHvE&#x3D; <a href="mailto:&#x33;&#x31;&#x33;&#53;&#x34;&#x37;&#52;&#56;&#51;&#49;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;">&#x33;&#x31;&#x33;&#53;&#x34;&#x37;&#52;&#56;&#51;&#49;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#x6d;</a></p>
+<h2 id="Github-添加公钥"><a href="#Github-添加公钥" class="headerlink" title="Github 添加公钥"></a>Github 添加公钥</h2><p>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDvGSDtVYq+Grftx8HbzydSWItkiXTgq5NOc2tiBN2+UlbUNaUJBlqfgz5DDhUAMgm76E9KAhdDnW9y1Nv7sxUCWLl4SRwOUc6yFN56qLWqvaFsx4nXD88qTbF3sKJ3Aik457trxB8oc8mFTrbP8iD2NfIcHQGclMkLQ8qBRsROZ7ojDDKPCg3l4xLFav93dGi5yL&#x2F;Nx3PnrQborlcH1XSihH333FU630hJywDZc&#x2F;664ghPbSFMrjmSPKY6GsQia7HBS5MzgRwCxIu8mOP8q9u47eSOpuz+0NHs0e9exOTezu1iTMhb2LX9rVvmzI+7AALFmJrjdq1&#x2F;DH&#x2F;nLFwL0kE3vJXCJedu+JOquF6P4wsh0nXLTCCllxeNp14GAkPIcH+KWjJutpGT&#x2F;3v9rBEAZAnpQqvxQ7fbU3o5Q+pJe3fU3aBz+Y7M64po&#x2F;moYZgVNLvKp+CLO+1OHqZHjBDXXvg+v7rbj3beGLQHDzaO5ZbCOs2gawYRoPxcj0vmGg&#x2F;mzHvE&#x3D; <a href="mailto:&#x33;&#x31;&#x33;&#53;&#x34;&#x37;&#x34;&#56;&#51;&#x31;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#x33;&#x31;&#x33;&#53;&#x34;&#x37;&#x34;&#56;&#51;&#x31;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 根据公钥保存路径查看公钥并复制</span><br>root@capdream:~<span class="hljs-comment"># cd ~/.ssh</span><br>root@capdream:~/.ssh<span class="hljs-comment"># ls</span><br>authorized_keys  id_rsa  id_rsa.pub<br>root@capdream:~/.ssh<span class="hljs-comment"># cat id_rsa.pub</span><br></code></pre></td></tr></table></figure>
 
 <p><img src="https://cdn.nlark.com/yuque/0/2023/png/27928215/1700583363210-21fe0d28-acf4-40f3-ba90-aae1919a3b02.png#averageHue=%23312f2c&clientId=ubebae56a-c5bb-4&from=paste&height=64&id=ue66366ae&originHeight=96&originWidth=449&originalType=binary%E2%88%B6=1.5&rotation=0&showTitle=false&size=11662&status=done&style=none&taskId=u6a4b1571-45c5-419a-b1b8-b18510eaaa3&title=&width=299.3333333333333" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.nlark.com/yuque/0/2023/png/27928215/1700497263541-b4631b4a-dd1e-47d7-a71d-2f643fc147ad.png#averageHue=%230e1319&clientId=u4e1bbd40-bdb8-4&from=paste&height=487&id=u8e3807ab&originHeight=804&originWidth=1985&originalType=binary%E2%88%B6=1.6500000953674316&rotation=0&showTitle=false&size=146459&status=done&style=none&taskId=u94c492c4-616e-450c-b180-f15144c0e38&title=&width=1203.0302334970281" srcset="/img/loading.gif" lazyload alt="image.png"><br>创建然后将复制的公钥保存即可，名字随便取</p>
