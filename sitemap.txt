@@ -1,4 +1,3 @@
-http://example.com/2023/11/23/yuque/Ubuntu,windows+hexo+github+%E8%AF%AD%E9%9B%80%E5%90%8C%E6%AD%A5/
 http://example.com/2023/11/23/yuque/hexo+github+%E8%AF%AD%E9%9B%80%E5%90%8C%E6%AD%A5!Ubuntu,windows/
 http://example.com/2023/11/21/yuque/%E6%B5%8B%E8%AF%95/
 http://example.com/about/index-1.html
