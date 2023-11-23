@@ -2,7 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2023/11/22/yuque/kpvecs1rc6e2fizt/</loc>
+    <loc>http://example.com/2023/11/23/yuque/Ubuntu,windows+hexo+github+%E8%AF%AD%E9%9B%80%E5%90%8C%E6%AD%A5/</loc>
+    
+    <lastmod>2023-11-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/2023/11/23/yuque/hexo+github+%E8%AF%AD%E9%9B%80%E5%90%8C%E6%AD%A5!Ubuntu,windows/</loc>
+    
+    <lastmod>2023-11-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/2023/11/21/yuque/%E6%B5%8B%E8%AF%95/</loc>
     
     <lastmod>2023-11-23</lastmod>
     
